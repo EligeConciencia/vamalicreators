@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ELIGE CON-CIENCIA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script class="u-script" type="text/javascript" src="jsjs/jquery.js" defer=""></script>
+<script class="u-script" type="text/javascript" src="jsjs/D.d.js" defer=""></script>
+
+
+
+
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": ""}
+</script>
+
+
+
+
+<style>
+
+
+
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+
+
+#myImg:hover {opacity: 0.7;}
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+
+
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+
+
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+
+
+
+/* Add Animation */
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+
+
+
+@keyframes zoom {
+  from {transform: scale(0.1)}
+  to {transform: scale(1)}
+}
+
+
+
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
+
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+
+
+ .container {
+  position: relative;
+  width: 50%;
+}
+
+
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f18b9c;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+
+
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+
+
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+     body{
+  background-image: linear-gradient(to bottom right, #f89999fd, #ffb482, #fffd9b, #b9e5b7, #a8bffd, #ca99eb);
+
+
+
+
+}
+h1 {
+          color:rgb(251, 251, 251); font-size: 40px;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          padding:4px;
+          margin: 10px;
+        }
+        h2 {
+          color:rgb(0, 0, 0);
+          font-size: 50px;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          padding:4px;
+          margin: 10px;
+        }
+        h3{
+            background-image: url('https://alvic.com/wp-content/uploads/2021/11/gris-perla.jpg');
+            color:rgb(241, 45, 166); font-size: 30px;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          padding:4px;
+          margin: 10px;
+        }
+        h4{
+          color:rgb(0, 0, 0);
+          font-size: 27px;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+       
+        table, th, td {
+           border:1px solid rgb(0, 0, 0);
+        }
+       
+        a:link, a:visited {
+           background-color: #000000d7;
+           color: rgb(240, 233, 233);
+            padding: 20px 50px;
+           text-align: left;
+            text-decoration: none;
+           display: inline-block;
+           font-size: 20px;
+          }
+
+
+
+
+
+
+
+
+        a:hover, a:active {
+          background-color: rgb(255, 255, 255);
+          font-size: 20px;
+          }
+          img{
+            margin: 20px;
+             padding: 50px;
+            }
+
+
+
+
+
+
+
+
+            .dropbtn {
+  background-color: #fa98c6;
+  color: rgb(226, 211, 211);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 91, 91, 0.959);
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+.dropdown-content a {
+  color: rgb(255, 92, 241);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+
+
+
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+
+
+
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+
+
+.dropdown:hover .dropbtn {
+  background-color: #f8f079;
+}
+p{
+    background-image: url('https://alvic.com/wp-content/uploads/2021/11/gris-perla.jpg');
+    color:rgb(0, 0, 0); font-size: 40px;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          padding:4px;
+          margin: 10px;
+}
+p1{
+    color:rgb(0, 0, 0); font-size: 40px;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          padding:4px;
+          margin: 10px;
+         
+}
+p2{
+    
+    color:rgb(241, 45, 166); font-size: 40px;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          padding:4px;
+          margin: 10px;
+}
+
+p3{
+    background-image: url('https://alvic.com/wp-content/uploads/2021/11/gris-perla.jpg');
+    color:rgb(0, 0, 0); font-size: 50px;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          padding:4px;
+          margin: 10px;
+}
+</style>
+
+
+</head>
+
+
+
+
+<body class="u-body u-xl-mode" data-lang="es">
+
+
+
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 10px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">Inicio</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">Feminismo</a>
+    <a href="# " class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">Ecologia</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">Cuerpos diversos</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">Consumo</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">LGBTQ+ </a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">Salud mental</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">LINEAS DE AYUDA</a>
+   
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+    
+    <img src="media/LG.GIF" alt="Acceptence" style="float:center;width:100%;">
+    <br> </br>
+    <br> </br>
+   
+    
+
+    <div class="navbar">
+    </div>
+    </div>
+ </Header>
+ 
+ <!-- About Section -->
+  <div class="w3-container w3-center w3-animate-zoom">
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+      <hr class="w3-opacity">
+	  <p2 align= "center"> Hola a todeeess. Estoy muy contenta de tener la oportunidad de escribir este articulo especialmente para ti. 
+							Así que siéntate, relájate y sumérgete en esta experiencia. Espero que encuentres todo lo que buscas. </p2> 
+    </div>
+ <br> </br>
+ <br> </br>
+ <br> </br>
+ <br> </br>
+ 
+ 
+  <!-- About Section -->
+  <div class="w3-container w3-center w3-animate-zoom">
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+      <hr class="w3-opacity">
+	  <p1 align= "center"> Esta es una comunidad llamada "LGBTQ+" que siente atracción emocional, afectiva y sexual hacia personas del mismo género o de más de un género.  </p1> 
+    </div>
+
+
+
+  <!-- About Section -->
+  <div class="w3-container w3-center w3-animate-zoom">
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    
+    <hr class="w3-opacity">
+    <p1> Estas personas se identifican y expresan su identidad de acuerdo con un género que no se alinea tradicionalmente con su sexo biológico.</p1>
+  </div>
+
+ <br> </br>
+ <br> </br>
+ <br> </br>
+ <br> </br>
+ 
+ <br> </br>
+ <br> </br>
+ <br> </br>
+ <br> </br>
+
+
+
+
+  <div class="w3-container w3-center w3-animate-zoom">
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+        <center>
+            <h3>OBJETIVO</h3>
+          </center>
+      <hr class="w3-opacity">
+      <p1> Luchan por la igualdad de derechos para aquellas personas que han sido históricamente discriminadas. </p1>
+      <br> </br>
+      <br> </br>
+      <p1> En sociedades tradicionales, se espera que todos se ajusten al modelo de la heterosexualidad, lo que resulta en estigmas y prejuicios 
+        hacia aquellos que no se ajustan a esta norma, lo que a su vez se traduce en la negación de derechos.</p1>
+    </div>
+    <br> </br>
+ <br> </br>
+ <br> </br>
+ <br> </br>
+ 
+ <br> </br>
+ <br> </br>
+ <br> </br>
+ <br> </br>
+      <div class="w3-container w3-center w3-animate-zoom">
+     
+        <center>
+        <h3>SIGLAS</h3>
+		</center>
+		
+        <hr class="w3-opacity">
+		 <p1> Te voy a explicar el significado de cada sigla que conforma la palabra LGBTQ+</p1>
+         <br> </br>
+		 <br> </br>
+		 <br> </br>
+		<br> </br>
+	
+		 <img id="myImg" src="https://i.pinimg.com/564x/aa/59/ed/aa59eda9f3ecda0d5d89c8dc858739a9.jpg" alt="Lesbian" style="float:center;width:300px;height:300px;"  align= "right">
+		 <p3 align= "left">- L -</p3> <p1>Lesbianas: mujeres que sienten atracción sexual por mujeres</p1>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<img id="myImg" src="https://i.pinimg.com/564x/00/de/d4/00ded48b7af2eaacb619a292374364d5.jpg" alt="Gay" style="float:center;width:300px;height:300px;"  align= "left">
+		 <p3 align= "right">- G -</p3> <p1> Gays: hombres que sienten atracción sexual por hombres</p1>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		
+		<img id="myImg" src="https://i.pinimg.com/564x/ab/69/53/ab69533e7f814196e8616e39b5eb030a.jpg" alt="Bi" style="float:center;width:300px;height:300px;"  align= "right">
+		 <p3 align= "left">- B -</p3> <p1> Bisexuales: quienes se sienten atraídos sexualmente por personas de su mismo sexo o género
+											y también por personas de distinto sexo o género</p1>
+		 <br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+         <img id="myImg" src="https://i.pinimg.com/564x/e5/be/e0/e5bee0bee1c2247c33b4f10e74270806.jpg" alt="Trans" style="float:center;width:300px;height:300px;"  align= "left">
+		  <p3 align= "right">- T -</p3> <p1> Transgénero: personas que se identifican y expresan con un género distinto al de su sexo biológico, 
+												pero no se pretende hacer modificaciones corporales</p1>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+           <img id="myImg" src="https://i.pinimg.com/564x/2b/6b/9c/2b6b9ca62f66883745b6844dcee9cd6e.jpg" alt="Travesti" style="float:center;width:300px;height:300px;"  align= "right">
+         <p3 align= "left">- T -</p3> <p1> Travesti: personas que adoptan comportamientos, vestimentas y expresiones 
+										que corresponden a un género distinto al de su sexo, sin que ello implique una orientación</p1>
+		 <br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<img id="myImg" src="https://i.pinimg.com/564x/90/7a/4b/907a4b0c57ab76d5b6470f408f7f0b2b.jpg" alt="Transexuales" style="float:center;width:300px;height:300px;"  align= "left">
+		 <p3 align= "right">- T -</p3> <p1> Transexuales: personas que han modificado su sexo, adquiriendo las características físicas del otro</p1>
+		 <br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+           <img id="myImg" src="https://i.pinimg.com/564x/c0/d8/0f/c0d80f48248a44b11e82a76aacc3f6cd.jpg" alt="Intersexual" style="float:center;width:300px;height:300px;"  align= "right">
+          <p3 align= "left">- I -</p3> <p1> Intersexual: personas que han nacido con características físicas y biológicas de ambos sexos</p1>
+		 <br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<img id="myImg" src="https://i.pinimg.com/564x/91/8f/2c/918f2c121732b3fd2e52775bdc53f263.jpg" alt="Queer" style="float:center;width:300px;height:300px;"  align= "left">
+		   <p3 align= "right">- Q -</p3> <p1> Queer: personas que construyen y manifiestan su sexualidad fuera de cualquier clasificación de género binario</p1>
+		 <br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+       
+	   
+      </div>
+        <br> </br>
+        <br> </br>
+
+         <!-- About Section -->
+  <div class="w3-container w3-center w3-animate-zoom">
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+        <center>
+            <h2>  ASEXUAL </h2>
+			<img id="myImg" src="https://i.pinimg.com/564x/24/30/5b/24305bef5f3bbcc898c5ec8a4a382ee1.jpg" alt="Asexual" style="float:center;width:1000px;height:600px;">
+        </center>
+         
+            <div class="w3-container w3-center w3-animate-zoom">
+            <hr class="w3-opacity">
+      <p1> Una persona asexual no experimenta atracción sexual o no desea contacto sexual. Puede tener cualquier orientación sexual, 
+	  porque la atracción sexual es solo un tipo de atracción</p1>
+
+ <br> </br>
+ <br> </br>
+						
+    </div>
+    <div class="w3-container w3-center w3-animate-zoom">     
+    <hr class="w3-opacity">
+          <p1> A una persona le puede atraer alguien de manera física, emocional, mental y espiritual, salir, enamorarse, casarse, incluso si no tienen sexo, 
+            no les gusta el sexo o no quieren tener sexo. 
+			  <br> </br>
+			  <br> </br>
+			Algunas personas asexuales incluso pueden tener sexo o masturbarse, mientras que otras no. Ser asexual solo significa que no deseas sexo.</p1>
+        </div>
+		
+    <br> </br>
+ <br> </br>
+
+		
+		 <div class="w3-container w3-center w3-animate-zoom">
+        <hr class="w3-opacity">
+          <p1> Si estás considerando la posibilidad de que seas asexual, puede ser útil hacerse las siguientes preguntas: </p1>
+        </div>
+		    <br> </br>
+ <br> </br>
+		<div class="w3-container w3-center w3-animate-zoom">
+      <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+        <hr class="w3-opacity">
+		<center>
+        <p2> ¿Has experimentado alguna vez atracción sexual hacia otra persona?</p2>
+            <br> </br>
+			<br> </br>
+			
+           <p2>¿Deseas tener relaciones sexuales o participar en prácticas sexuales? Si planeas tener una relación o casarte en el futuro,
+		   ¿te gustaría que el sexo sea parte de esa relación?</p2> 
+            <br> </br>
+			<br> </br>
+			
+            <p2>Si has tenido experiencias sexuales en el pasado, ¿disfrutaste de ellas? ¿Te gustaría repetirlas?</p2>
+            <br> </br>
+			<br> </br>
+			
+            <p2>¿Tus sentimientos respecto a estas experiencias fueron diferentes o similares a los de tus amigos, amigas o pareja?</p2>
+			 <br> </br>
+			<br> </br>
+			<br> </br>
+			<p1> Recuerda que estas preguntas son solo una guía, la identidad sexual es algo personal y único para cada individuo.
+		
+			<br> </br>
+			Explorar tus propios sentimientos y reflexionar sobre tus experiencias puede ayudarte a comprender mejor tu orientación sexual. 
+		
+			<br> </br>
+			Si tienes dudas o inquietudes, considera buscar apoyo en comunidades o recursos especializados en asexualidad. </p1>
+		</center>
+            
+      </div>
+	  
+	  
+ <br> </br>
+ <br> </br>
+ <br> </br>
+ <br> </br>
+ <br> </br>
+ <br> </br>
+ <br> </br>
+ 
+ <br> </br>
+ <br> </br>
+ <br> </br>
+ <br> </br>
+ <br> </br>
+ <br> </br>
+ <br> </br>
+
+        
+
+
+
+       
+
+
+
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+       
+        <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+       
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+       
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+       
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        </script>
+
+
+
+
+       
+   
+  </div>
+
+
+
+
+
+
+
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <center>
+	<h2>Contactanos</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> CDMX, MX</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 55-87-49-84-31</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: eligeconcienciaa@gmail.com</p>
+	  </center>
+    </div>
+   
+    <!-- Image of location/map -->
+    <img src="https://lh3.googleusercontent.com/p/AF1QipP8fOrhGbsNUu1Hvi8w32D789t1qp_pJBQ34KgG=s1360-w1360-h1020" class="w3-image"style="width:100%;margin:32px 0">
+   
+    <p>Puedes enviar tus sugerencias aquí</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nombre" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Correo" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Asunto" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensaje" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+        </button>
+      </p>
+    </form>
+  <!-- seccion de contacto -->
+  </div>  
+ 
+   <!-- Footer -->
+   <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Vamali<a href="" target="_blank" class="w3-hover-text-green">Creators</a></p>
+  <!-- fin footer -->
+  </footer>
+ 
+<!-- END PAGE CONTENT -->
+</div>
+
+
+
+
+
+
+
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+
+
+
+
+
+
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
+

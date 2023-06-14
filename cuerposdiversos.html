@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ELIGE CON-CIENCIA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script class="u-script" type="text/javascript" src="jsjs/jquery.js" defer=""></script>
+<script class="u-script" type="text/javascript" src="jsjs/D.d.js" defer=""></script>
+
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": ""}
+</script>
+
+<style>
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.7s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+ .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f18b9c;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 23px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+     body{
+  background-image: linear-gradient(to bottom right, #ffbb46fd, #cf81eb);
+
+}
+h1 {
+          color:rgb(251, 251, 251); font-size: 40px;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          padding:4px;
+          margin: 10px;
+        }
+        h2 {
+          color:rgb(0, 0, 0);
+          font-size: 50px;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          padding:4px;
+          margin: 10px;
+        }
+        h3{
+            background-image: url('https://alvic.com/wp-content/uploads/2021/11/gris-perla.jpg');
+            color:rgb(241, 45, 166); font-size: 30px;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          padding:4px;
+          margin: 10px;
+        }
+        h4{
+          color:rgb(0, 0, 0);
+          font-size: 27px;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        table, th, td {
+           border:1px solid rgb(0, 0, 0);
+        }
+        
+        a:link, a:visited {
+           background-color: #000000d7;
+           color: rgb(240, 233, 233);
+            padding: 20px 50px;
+           text-align: left;
+            text-decoration: none;
+           display: inline-block;
+           font-size: 20px;
+          }
+
+
+        a:hover, a:active {
+          background-color: rgb(255, 255, 255);
+          font-size: 20px;
+          }
+          img{
+            margin: 20px;
+             padding: 50px;
+            }
+
+
+            .dropbtn {
+  background-color: #fa98c6;
+  color: rgb(226, 211, 211);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 91, 91, 0.959);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: rgb(255, 92, 241);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+  background-color: #f8f079;
+}
+p{
+    background-image: url('https://alvic.com/wp-content/uploads/2021/11/gris-perla.jpg');
+    color:rgb(87, 48, 226); font-size: 20px;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          padding:4px;
+          margin: 10px;
+}
+</style>
+
+
+
+</head>
+
+<body class="u-body u-xl-mode" data-lang="es">
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 10px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="file:///F:/CONCIENCIA/Index.html" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">Inicio</a>
+    <a href="file:///F:/CONCIENCIA/feminismo.html" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">Feminismo</a>
+    <a href="file:///F:/CONCIENCIA/ecologia.html" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">Ecologia</a>
+    <a href="file:///F:/CONCIENCIA/cuerposdiversos.html" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">Cuerpos diversos</a>
+    <a href="file:///F:/CONCIENCIA/CONSUMO.HTML" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">Consumo</a>
+    <a href="file:///F:/CONCIENCIA/lgbt.html" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">LGBTYQ+ </a>
+    <a href="file:///F:/CONCIENCIA/LINEASDEAYUDA.html" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">LINEAS DE AYUDA</a>
+   
+  </div>
+</nav>
+
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+
+ 
+
+
+  <HEader>
+<CENTER>
+    <img src="media/CD.GIF" alt="logo" style="width:100%;" >
+</CENTER>
+
+ </HEader>
+
+  <!-- About Section -->
+  <div class="w3-container w3-center w3-animate-zoom">
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <center>
+      <h3>Normalizando los cuerpos de todas las personas</h3>
+    </center>
+    <hr class="w3-opacity">
+
+    <p> Hola, holaaaa! En la sociedad actual, la imagen corporal ha sido objeto de una presión desmedida y unos estándares de belleza irreales. Estos ideales inalcanzables han llevado a que muchas personas se sientan inseguras y avergonzadas de sus cuerpos, generando una falta de aceptación y una lucha constante por encajar en ciertos moldes establecidos. Sin embargo, es hora de reconocer la importancia de la diversidad corporal y trabajar en la normalización de todos los tipos de cuerpos. En este artículo, exploraremos por qué es crucial celebrar la diversidad corporal y cómo podemos avanzar hacia una sociedad más inclusiva y empoderadora.
+    </p>
+  </div>
+
+
+  <div class="w3-container w3-center w3-animate-zoom">
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+      <center>
+      <h3>Aceptar la diversidad corporal</h3>
+    </center>
+      <hr class="w3-opacity">
+      <p>La diversidad corporal se refiere a la amplia gama de formas, tamaños, colores y características que existen en los cuerpos humanos. Cada persona es única y posee una combinación única de rasgos físicos. Sin embargo, los medios de comunicación, la publicidad y las redes sociales han promovido estereotipos de belleza que favorecen un tipo de cuerpo específico, creando así una exclusión de aquellos que no encajan en esos estándares.
+<BR></BR>
+Es importante reconocer que la diversidad corporal es algo natural y hermoso. Al normalizar todos los tipos de cuerpos, estamos abriendo las puertas a una sociedad más inclusiva y equitativa. Cada cuerpo merece ser respetado y valorado, independientemente de su tamaño, forma o apariencia. Promover la aceptación de la diversidad corporal no solo beneficia a las personas individualmente, sino que también fortalece el tejido social y fomenta un ambiente de respeto y amor propio.
+</p>
+    </div>
+   
+      <div class="w3-container w3-center w3-animate-zoom">
+      <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+        <center>
+        <h3>Romper con los estereotipos</h3>
+      </center>
+        <hr class="w3-opacity">
+        <p> Para normalizar los cuerpos de todas las personas, debemos romper con los estereotipos que perpetúan los ideales de belleza inalcanzables. Los medios de comunicación y la industria de la moda, por ejemplo, desempeñan un papel crucial en la formación de la percepción de nuestro propio cuerpo. Es esencial que estas plataformas se esfuercen por mostrar una variedad realista de cuerpos y evitar la manipulación digital excesiva que crea expectativas poco realistas.
+<BR></BR>
+Además, la educación juega un papel vital en el cambio de mentalidades. Es fundamental implementar programas escolares y campañas de concienciación que promuevan una imagen corporal positiva y la aceptación de la diversidad. Los niños y los jóvenes deben aprender a apreciar y respetar los cuerpos en todas sus formas y tamaños desde temprana edad, para que crezcan en un ambiente inclusivo y libre de prejuicios.
+        </p>
+      </div>
+
+<div class="w3-container w3-center w3-animate-zoom">
+      <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+        <center>
+        <h3>Promoviendo la inclusión y la representación</h3>
+      </center>
+        <hr class="w3-opacity">
+        <p> Es esencial que las personas de todos los tamaños, formas y características se sientan representadas en los medios de comunicación, la publicidad y la industria del entretenimiento. La inclusión de una amplia gama de cuerpos en campañas publicitarias, programas de televisión y películas no solo rompe con los estereotipos, sino que también permite que las personas se identifiquen y se sientan valoradas.
+ <br> </br>
+Asimismo, es importante que las marcas de ropa y los diseñadores consideren la diversidad corporal al crear sus productos. Ofrecer tallas y diseños que se adapten a diferentes tipos de cuerpos demuestra un compromiso real con la inclusión y permite que las personas se sientan cómodas y representadas en el mundo de la moda.
+        </p>
+      </div>
+        <br> </br>
+        <br> </br>
+<div class="image-grid">
+      <img src="https://i.pinimg.com/564x/58/87/7b/58877b894d08e3aa7c536639168dfe45.jpg" alt="Diversidad corporal 1">
+      <img src="https://i.pinimg.com/564x/88/98/7d/88987dd88141f758088159859d4aec9f.jpg" alt="Diversidad corporal 2">
+      <img src="https://i.pinimg.com/564x/55/f9/4f/55f94fc24b18401a1ab2a0aa5a05137d.jpg" alt="Diversidad corporal 3">
+    </div>
+
+<div class="w3-container w3-center w3-animate-zoom">
+      <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+        <center>
+        <h3>Conclusión</h3>
+      </center>
+        <hr class="w3-opacity">
+        <p> La normalización de la diversidad corporal es un paso crucial hacia una sociedad más justa y empoderadora. Al celebrar todos los tipos de cuerpos y romper con los estándares de belleza inalcanzables, creamos un entorno en el que todas las personas pueden sentirse aceptadas y valoradas. Promover la inclusión y la representación en los medios de comunicación, así como educar a las generaciones futuras sobre la importancia de la diversidad corporal, nos acerca a una sociedad en la que el amor propio y la aceptación sean la norma. Juntos, podemos construir un mundo en el que todos los cuerpos sean apreciados por su singularidad y belleza intrínseca.</p>
+       </div>
+      <br> </br>
+      <br> </br>
+      <br> </br>
+      <br> </br>
+      <br> </br>
+      <br> </br>
+      <br> </br>
+      <br> </br>
+      <br> </br>
+      
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contactanos</h2>
+    <hr class="w3-opacity">
+
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> CDMX, MX</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 55-87-49-84-31</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: eligeconcienciaa@gmail.com</p>
+    </div>
+   
+    <!-- Image of location/map -->
+    <img src="https://lh3.googleusercontent.com/p/AF1QipP8fOrhGbsNUu1Hvi8w32D789t1qp_pJBQ34KgG=s1360-w1360-h1020" class="w3-image"style="width:100%;margin:32px 0">
+   
+    <p>Puedes enviar tus sugerencias aquí</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nombre" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Correo" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Asunto" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensaje" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+        </button>
+      </p>
+    </form>
+  <!-- seccion de contacto -->
+  </div>  
+ 
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <p class="w3-medium">Vamali<a href="" target="_blank" class="w3-hover-text-green">Creators</a></p>
+  <!-- fin footer -->
+  </footer>
+ 
+<!-- END PAGE CONTENT -->
+</div>
+
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+</body>
+</html>

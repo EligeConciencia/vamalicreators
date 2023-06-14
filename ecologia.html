@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ecologia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script class="u-script" type="text/javascript" src="jsjs/jquery.js" defer=""></script>
+<script class="u-script" type="text/javascript" src="jsjs/D.d.js" defer=""></script>
+
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": ""}
+</script>
+
+<style>
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.7s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+ .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f18b9c;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 23px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+     body{
+  background-image: linear-gradient(to bottom right, #7a9679, #ffffffeb);
+
+}
+h1 {
+          color:rgb(251, 251, 251); font-size: 40px;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          padding:4px;
+          margin: 1px;
+        }
+        h2 {
+          color:rgb(0, 0, 0);
+          font-size: 25px;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          padding:4px;
+          margin: 10px;
+        }
+        h3{
+            background-image: url('https://alvic.com/wp-content/uploads/2021/11/gris-perla.jpg');
+            color:rgb(241, 45, 166); font-size: 33px;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          padding:4px;
+          margin: 10px;
+        }
+        h4{
+          color:rgb(0, 0, 0);
+          font-size: 27px;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        table, th, td {
+           border:1px solid rgb(0, 0, 0);
+        }
+        
+        a:link, a:visited {
+           background-color: #000000d7;
+           color: rgb(240, 233, 233);
+            padding: 20px 50px;
+           text-align: left;
+            text-decoration: none;
+           display: inline-block;
+           font-size: 20px;
+          }
+
+
+        a:hover, a:active {
+          background-color: rgb(255, 255, 255);
+          font-size: 20px;
+          }
+          img{
+            margin: 20px;
+             padding: 50px;
+            }
+
+
+            .dropbtn {
+  background-color: #fa98c6;
+  color: rgb(226, 211, 211);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 91, 91, 0.959);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: rgb(255, 92, 241);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+  background-color: #f8f079;
+}
+p{
+    background-image: url('https://alvic.com/wp-content/uploads/2021/11/gris-perla.jpg');
+    color:rgb(87, 48, 226); font-size: 20px;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          padding:4px;
+          margin: 10px;
+}
+</style>
+
+
+
+</head>
+
+<body class="u-body u-xl-mode" data-lang="es">
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 10px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="file:///F:/CONCIENCIA/Index.html" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">Inicio</a>
+    <a href="file:///F:/CONCIENCIA/feminismo.html" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">Feminismo</a>
+    <a href="file:///F:/CONCIENCIA/ecologia.html" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">Ecologia</a>
+    <a href="file:///F:/CONCIENCIA/cuerposdiversos.html" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">Cuerpos diversos</a>
+    <a href="file:///F:/CONCIENCIA/CONSUMO.HTML" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">Consumo</a>
+    <a href="file:///F:/CONCIENCIA/lgbt.html" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">LGBTYQ+ </a>
+    <a href="file:///F:/CONCIENCIA/LINEASDEAYUDA.html" class="w3-bar-item w3-button w3-hover-text-black w3-hover-white" onclick="closeNav()">LINEAS DE AYUDA</a>
+   
+  </div>
+</nav>
+
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <HEader>
+<center>
+    <img src="media/ECO.GIF" alt="logo" style="width:97%;">
+</center>
+ </HEader>
+
+
+  <br> </br>
+  <br> </br>
+  <br> </br>
+  <br> </br>
+  <br> </br>
+  <br> </br>
+  <br> </br>
+  <br> </br>
+  <br> </br>
+  <br> </br>
+  <br> </br>
+  <br> </br>
+  <br> </br>
+  <br> </br>
+  <br> </br>
+
+
+  <!-- About Section -->
+  <div class="w3-container w3-center w3-animate-zoom">
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <center>
+    <h3>Consejos para llevar una vida cero basura</h3>
+  </center>
+    <hr class="w3-opacity">
+    <p>Comenzar una vida "cero basura" implica reducir la cantidad de residuos que generamos en nuestro día a día. Aquí tienes algunos consejos y recomendaciones para ayudarte a empezar:
+    <br>
+   
+    Recuerda que el objetivo no es lograr una transición perfecta de un día para otro, sino hacer cambios graduales y sostenibles en tu estilo de vida. Cada pequeño paso cuenta y cualquier esfuerzo por reducir los residuos es valioso.
+    
+    Además de estos consejos, te recomiendo investigar sobre grupos locales de "cero basura" o sustentabilidad en tu área, ya que podrán brindarte información y apoyo específico para tu comunidad.</p>
+
+  </div>
+
+
+   <h3>Consejo 1: Reducir el consumo de plástico</h3>
+     <li> Compra solo lo que necesitas y evita los productos desechables o de un solo uso.</li> <br>
+        <li>Opta por productos duraderos y de calidad en lugar de los desechables.</li><br>
+        <li>Lleva una lista de compras y evita las compras impulsivas.</li><br>
+        <img src="https://i.pinimg.com/564x/9e/80/f8/9e80f8c83fbec059c9251585c78bfec0.jpg" alt="Consejo 1">
+    
+    <h3>Consejo 2: Reutilizar y reparar</h3>
+    <li>Reutiliza envases y recipientes para almacenar alimentos, productos de limpieza, etc.</li><br>
+    <li>Repara y arregla objetos en lugar de desecharlos y reemplazarlos inmediatamente.</li><br>
+    <img src="https://i.pinimg.com/564x/92/68/7a/92687ab15890b5ff9868b62f04a03670.jpg" alt="Consejo 2">
+    
+    <h3>Consejo 3: Reciclar correctamente</h3>
+    <li>Aprende sobre los sistemas de reciclaje en tu localidad y sigue las pautas establecidas.</li><br>
+    <li>Separa y clasifica correctamente tus residuos para asegurarte de que sean reciclados adecuadamente.</li><br>
+    <img src="https://i.pinimg.com/564x/f4/ba/d7/f4bad7269f990f3702c6046262c4c09b.jpg" alt="Consejo 3">
+    
+    <h3>Consejo 4: Comprar a granel</h3>
+    <li>Ahorras dinero y compras exactamente lo que necesitas sin generar desperdicios</li><br>
+    <li>Reduces los residuos de envases plasticos</li><br>
+    <li>Mayor frescura y calidad puedes estar seguro de que estás comprando productos más frescos</li><br>
+    <img src="https://i.pinimg.com/564x/a5/f1/73/a5f1735a100a084100f942071e67e1fa.jpg" alt="Consejo 4">
+
+    <h3>Consejo 5: Educación e investigación</h3>
+    <li>Lee libros como "Cero residuos" de Bea Johnson o "La magia del orden" de Marie Kondo para obtener ideas y motivación.</li><br>
+    <li>Investiga sobre las políticas de residuos y reciclaje en tu área para comprender cómo se manejan los desechos y cómo puedes contribuir de manera más efectiva.</li><br>
+    <img src="https://i.pinimg.com/564x/5d/50/e4/5d50e4e3423383da69d2ff552167dcd9.jpg" alt="Consejo 5">
+
+    <h3>Consejo 6: Composta orgánica</h3>
+    <li>- Crea un sistema de compostaje para descomponer los residuos orgánicos y utilizarlos como abono para tus plantas o jardín.</li><br>
+    <img src="https://i.pinimg.com/564x/4c/7d/56/4c7d56b69b49080d95a222edd6590247.jpg" alt="Consejo 6">
+
+    <h3>Consejo 7: Evita el plástico</h3>
+    <li>Lleva tus propias bolsas de tela para hacer compras.
+    </li>Utiliza botellas reutilizables en lugar de botellas de plástico desechables.<br>
+    <li>Prefiere productos sin envases de plástico o elige alternativas con envases de vidrio, papel u otros materiales reciclables.</li><br>
+    <img src="https://i.pinimg.com/564x/c3/92/82/c39282a9b2e282fcb626f7da5add257c.jpg" alt="Consejo 7">
+
+    <h3>Consejo 8: Opta por alternativas sostenibles</h3>
+    <li>Utiliza productos de limpieza ecológicos o haz los tuyos propios con ingredientes naturales.</li><br>
+    <li>Usa productos de higiene personal como cepillos de dientes de bambú y productos de cuidado menstrual reutilizables, como copas menstruales o toallas de tela.</li><br>
+    <img src="https://i.pinimg.com/564x/f9/e8/f8/f9e8f8a4d2085a9a4534f9e84460a3e1.jpg" alt="Consejo 8">
+  </main>
+
+
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contactanos</h2>
+    <hr class="w3-opacity">
+
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> CDMX, MX</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 55-87-49-84-31</p>
+    </div>
+   
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <p class="w3-medium">Vamali<a href="" target="_blank" class="w3-hover-text-green">Creators</a></p>
+  <!-- fin footer -->
+  </footer>
+ 
+<!-- END PAGE CONTENT -->
+</div>
+
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+</body>
+</html>
